@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <img src="./assets/logo.png" />
+    <HelloWorld />
     <vb-button>BUTTON</vb-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from './components/HelloWorld';
 export default {
   name: 'App',
   components: {
     HelloWorld
   }
-}
+};
 </script>
 
 <style>
