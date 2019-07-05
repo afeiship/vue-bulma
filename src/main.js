@@ -3,9 +3,13 @@
 import Vue from 'vue';
 import App from './App';
 
+// import bulma
+import 'bulma';
+
 // install package
 import vueBulma from './components/index';
 Vue.use(vueBulma);
+
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

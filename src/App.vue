@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" />
-    <HelloWorld />
     <vb-button>BUTTON</vb-button>
+    <vb-button color="primary">BUTTON</vb-button>
+    <vb-button color="success">BUTTON</vb-button>
+    <vb-button color="warning">BUTTON</vb-button>
+    <vb-button color="link">BUTTON</vb-button>
+    <vb-button color="danger">BUTTON</vb-button>
+    <vb-button color="info">BUTTON</vb-button>
+    <vb-button loading>BUTTON</vb-button>
+    <vb-button disabled>BUTTON</vb-button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
 
