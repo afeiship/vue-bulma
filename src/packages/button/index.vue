@@ -1,7 +1,7 @@
 <template>
   <button
     @click="_click"
-    class="button vb-button"
+    class="button"
     :disabled="disabled"
     :class="[
       color ? 'is-' + color : '',

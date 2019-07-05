@@ -1,7 +1,11 @@
 import Button from './button';
+import Columns from './columns';
+import Column from './column';
 
 const components = {
-  Button
+  Button,
+  Columns,
+  Column
 };
 
 const install = function(Vue) {

@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <page-button></page-button>
+    <page-columns></page-columns>
   </div>
 </template>
 
 <script>
-import PageButton from './components/button.vue';
+import PageButton from './components/button';
+import PageColumns from './components/columns';
 export default {
   name: 'App',
   components: {
-    PageButton
+    PageButton,
+    PageColumns
   }
 };
 </script>
