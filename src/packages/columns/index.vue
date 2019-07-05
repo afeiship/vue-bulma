@@ -1,5 +1,5 @@
 <template>
-  <div @click="_click" class="columns">
+  <div class="columns">
     <slot></slot>
   </div>
 </template>
