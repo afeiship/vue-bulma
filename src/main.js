@@ -7,7 +7,7 @@ import App from './App';
 import 'bulma';
 
 // install package
-import vueBulma from './components/index';
+import vueBulma from './packages/index';
 Vue.use(vueBulma);
 
 Vue.config.productionTip = false;

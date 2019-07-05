@@ -1,21 +1,16 @@
 <template>
   <div id="app">
-    <vb-button>BUTTON</vb-button>
-    <vb-button color="primary">BUTTON</vb-button>
-    <vb-button color="success">BUTTON</vb-button>
-    <vb-button color="warning">BUTTON</vb-button>
-    <vb-button color="link">BUTTON</vb-button>
-    <vb-button color="danger">BUTTON</vb-button>
-    <vb-button color="info">BUTTON</vb-button>
-    <vb-button loading>BUTTON</vb-button>
-    <vb-button disabled>BUTTON</vb-button>
+    <page-button></page-button>
   </div>
 </template>
 
 <script>
+import PageButton from './components/button.vue';
 export default {
   name: 'App',
-  components: {}
+  components: {
+    PageButton
+  }
 };
 </script>
 

@@ -5,6 +5,7 @@
     :disabled="disabled"
     :class="[
       color ? 'is-' + color : '',
+      size ? 'is-' + size : '',
       {
         'is-loading': loading
       }
@@ -15,11 +16,14 @@
 </template>
 
 <script>
-// @thanks to: https://github.com/ElemeFE/element/blob/dev/packages/button/src/button.vue
 export default {
   name: 'vb-button',
   props: {
     color: {
+      type: String,
+      default: ''
+    },
+    size: {
       type: String,
       default: ''
     },
