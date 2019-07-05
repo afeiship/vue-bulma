@@ -14,7 +14,7 @@
       <vb-column grid="11">COlumn11</vb-column>
     </vb-columns>
 
-    <vb-columns>
+    <vb-columns gap="0">
       <vb-column grid="3">COlumn11</vb-column>
       <vb-column grid="3">COlumn11</vb-column>
       <vb-column grid="3">COlumn11</vb-column>
