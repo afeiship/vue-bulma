@@ -2,7 +2,7 @@
   <div
     class="columns"
     :class="[
-      gap ? `is-variable is-${gap}` : '',
+      typeof gap !== 'undefined' ? `is-variable is-${gap}` : '',
       {
         'is-gapless': gapless,
         'is-desktop': desktop,

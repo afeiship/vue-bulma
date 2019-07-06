@@ -21,14 +21,8 @@ const SIZE_MAP = {
 export default {
   name: 'vb-column',
   props: {
-    grid: {
-      type: Number,
-      default: 0
-    },
-    size: {
-      type: String,
-      default: ''
-    }
+    grid: Number,
+    size: String
   },
   computed: {
     theSize() {
