@@ -23,6 +23,9 @@
         <li>
           <router-link to="/progress">Progress</router-link>
         </li>
+        <li>
+          <router-link to="/table">Table</router-link>
+        </li>
       </ul>
     </aside>
     <section class="page-container">

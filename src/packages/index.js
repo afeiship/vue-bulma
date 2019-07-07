@@ -6,6 +6,7 @@ import Content from './content';
 import Delete from './delete';
 import Notification from './notification';
 import Progress from './progress';
+import Table from './table';
 
 const components = {
   Button,
@@ -15,7 +16,8 @@ const components = {
   Content,
   Delete,
   Notification,
-  Progress
+  Progress,
+  Table
 };
 
 const install = function(Vue) {
