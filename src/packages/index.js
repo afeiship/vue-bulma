@@ -7,6 +7,8 @@ import Delete from './delete';
 import Notification from './notification';
 import Progress from './progress';
 import Table from './table';
+import Tag from './tag';
+import Tags from './tags';
 
 const components = {
   Button,
@@ -17,7 +19,9 @@ const components = {
   Delete,
   Notification,
   Progress,
-  Table
+  Table,
+  Tag,
+  Tags
 };
 
 const install = function(Vue) {
