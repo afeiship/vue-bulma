@@ -4,6 +4,7 @@ import Column from './column';
 import Box from './box';
 import Content from './content';
 import Delete from './delete';
+import Notification from './notification';
 
 const components = {
   Button,
@@ -11,7 +12,8 @@ const components = {
   Column,
   Box,
   Content,
-  Delete
+  Delete,
+  Notification
 };
 
 const install = function(Vue) {

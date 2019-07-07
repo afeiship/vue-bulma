@@ -17,6 +17,9 @@
         <li>
           <router-link to="/delete">Delete</router-link>
         </li>
+        <li>
+          <router-link to="/notification">Notification</router-link>
+        </li>
       </ul>
     </aside>
     <section class="page-container">
