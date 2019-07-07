@@ -5,6 +5,7 @@ import Box from './box';
 import Content from './content';
 import Delete from './delete';
 import Notification from './notification';
+import Progress from './progress';
 
 const components = {
   Button,
@@ -13,7 +14,8 @@ const components = {
   Box,
   Content,
   Delete,
-  Notification
+  Notification,
+  Progress
 };
 
 const install = function(Vue) {
