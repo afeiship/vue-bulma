@@ -41,6 +41,9 @@
         <li>
           <router-link to="/image">image</router-link>
         </li>
+        <li>
+          <router-link to="/card">card</router-link>
+        </li>
       </ul>
     </aside>
     <section class="page-container">
@@ -57,32 +60,5 @@ export default {
 </script>
 
 <style lang="scss">
-html,
-body,
-#app {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  display: flex;
-  height: 100%;
-
-  .router-link-exact-active {
-    color: #007aff;
-    text-decoration: underline;
-  }
-
-  .page-sider {
-    background: #eee;
-    border-right: 2px solid #ccc;
-    padding: 10px;
-    width: 200px;
-  }
-  .page-container {
-    padding: 10px;
-    flex: 1;
-  }
-}
+@import './assets/app.scss';
 </style>

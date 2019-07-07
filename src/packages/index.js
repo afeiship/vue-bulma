@@ -13,6 +13,7 @@ import Title from './title';
 import Subtitle from './subtitle';
 import Breadcrumb from './breadcrumb';
 import Image from './image';
+import Card from './card';
 
 const components = {
   Button,
@@ -29,7 +30,8 @@ const components = {
   Title,
   Subtitle,
   Breadcrumb,
-  Image
+  Image,
+  Card
 };
 
 const install = function(Vue) {

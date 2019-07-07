@@ -1,0 +1,33 @@
+html,
+body,
+#app {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  display: flex;
+  height: 100%;
+
+  .router-link-exact-active {
+    color: #007aff;
+    text-decoration: underline;
+  }
+
+  .page-sider {
+    background: #eee;
+    border-right: 2px solid #ccc;
+    padding: 10px;
+    width: 200px;
+  }
+  .page-container {
+    padding: 10px;
+    flex: 1;
+    > [class^="page-"] {
+      width: 80%;
+      margin: 10px auto;
+      background: #fefefe;
+    }
+  }
+}

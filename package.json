@@ -5,6 +5,7 @@
   "author": "afeiship <1290657123@qq.com>",
   "private": true,
   "scripts": {
+    "build:component": "",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "pretty": "prettier-eslint --write \"build/**/*.js\" \"src/**/*.js\" \"src/**/*.vue\"",
@@ -44,7 +45,9 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "globby": "^10.0.1",
     "html-webpack-plugin": "^2.30.1",
+    "next-without": "github:afeiship/next-without",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
