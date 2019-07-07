@@ -1,11 +1,13 @@
 import Button from './button';
 import Columns from './columns';
 import Column from './column';
+import Box from './box';
 
 const components = {
   Button,
   Columns,
-  Column
+  Column,
+  Box
 };
 
 const install = function(Vue) {

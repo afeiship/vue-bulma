@@ -8,6 +8,9 @@
         <li>
           <router-link to="/columns">Columns</router-link>
         </li>
+        <li>
+          <router-link to="/box">Box</router-link>
+        </li>
       </ul>
     </aside>
     <section class="page-container">
@@ -17,14 +20,9 @@
 </template>
 
 <script>
-import PageButton from './components/button';
-import PageColumns from './components/columns';
 export default {
   name: 'App',
-  components: {
-    PageButton,
-    PageColumns
-  }
+  components: {}
 };
 </script>
 
@@ -48,7 +46,7 @@ body,
 
   .page-sider {
     background: #eee;
-    bottom: 1px solid #ccc;
+    border-right: 2px solid #ccc;
     padding: 10px;
     width: 200px;
   }
