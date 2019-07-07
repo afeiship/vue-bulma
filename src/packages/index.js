@@ -11,6 +11,7 @@ import Tag from './tag';
 import Tags from './tags';
 import Title from './title';
 import Subtitle from './subtitle';
+import Breadcrumb from './breadcrumb';
 
 const components = {
   Button,
@@ -25,7 +26,8 @@ const components = {
   Tag,
   Tags,
   Title,
-  Subtitle
+  Subtitle,
+  Breadcrumb
 };
 
 const install = function(Vue) {

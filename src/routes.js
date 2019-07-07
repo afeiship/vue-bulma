@@ -8,7 +8,8 @@ import Progress from './components/progress';
 import Table from './components/table';
 import Tag from './components/tag';
 import Title from './components/title';
-import SubTitle from './components/subtitle';
+import Subtitle from './components/subtitle';
+import Breadcrumb from './components/breadcrumb';
 
 export default [
   { path: '/button', component: Button },
@@ -21,5 +22,6 @@ export default [
   { path: '/table', component: Table },
   { path: '/tag', component: Tag },
   { path: '/title', component: Title },
-  { path: '/subtitle', component: SubTitle }
+  { path: '/subtitle', component: Subtitle },
+  { path: '/breadcrumb', component: Breadcrumb }
 ];

@@ -35,6 +35,9 @@
         <li>
           <router-link to="/subtitle">subtitle</router-link>
         </li>
+        <li>
+          <router-link to="/breadcrumb">breadcrumb</router-link>
+        </li>
       </ul>
     </aside>
     <section class="page-container">
