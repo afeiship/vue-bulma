@@ -2,12 +2,16 @@ import Button from './button';
 import Columns from './columns';
 import Column from './column';
 import Box from './box';
+import Content from './content';
+import Delete from './delete';
 
 const components = {
   Button,
   Columns,
   Column,
-  Box
+  Box,
+  Content,
+  Delete
 };
 
 const install = function(Vue) {
