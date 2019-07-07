@@ -7,6 +7,8 @@ import Notification from './components/notification';
 import Progress from './components/progress';
 import Table from './components/table';
 import Tag from './components/tag';
+import Title from './components/title';
+import SubTitle from './components/subtitle';
 
 export default [
   { path: '/button', component: Button },
@@ -17,5 +19,7 @@ export default [
   { path: '/notification', component: Notification },
   { path: '/progress', component: Progress },
   { path: '/table', component: Table },
-  { path: '/tag', component: Tag }
+  { path: '/tag', component: Tag },
+  { path: '/title', component: Title },
+  { path: '/subtitle', component: SubTitle }
 ];

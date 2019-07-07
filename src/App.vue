@@ -29,6 +29,12 @@
         <li>
           <router-link to="/tag">Tag</router-link>
         </li>
+        <li>
+          <router-link to="/title">Title</router-link>
+        </li>
+        <li>
+          <router-link to="/subtitle">subtitle</router-link>
+        </li>
       </ul>
     </aside>
     <section class="page-container">

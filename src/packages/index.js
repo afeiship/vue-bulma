@@ -9,6 +9,8 @@ import Progress from './progress';
 import Table from './table';
 import Tag from './tag';
 import Tags from './tags';
+import Title from './title';
+import Subtitle from './subtitle';
 
 const components = {
   Button,
@@ -21,7 +23,9 @@ const components = {
   Progress,
   Table,
   Tag,
-  Tags
+  Tags,
+  Title,
+  Subtitle
 };
 
 const install = function(Vue) {

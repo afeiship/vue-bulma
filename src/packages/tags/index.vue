@@ -1,7 +1,13 @@
 <template>
-  <span class="tags" :class="[size ? 'are-' + size : '', {
-    'has-addons':addons
-  }]">
+  <span
+    class="tags"
+    :class="[
+      size ? 'are-' + size : '',
+      {
+        'has-addons': addons
+      }
+    ]"
+  >
     <slot></slot>
   </span>
 </template>
