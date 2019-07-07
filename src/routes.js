@@ -1,21 +1,5 @@
-const components = [
-  'button',
-  'columns',
-  'box',
-  'content',
-  'delete',
-  'notification',
-  'progress',
-  'table',
-  'tag',
-  'title',
-  'subtitle',
-  'breadcrumb',
-  'image',
-  'card'
-];
-
-export default components.map((item) => {
+import component from './packages/component.json';
+export default component.items.map((item) => {
   return {
     path: `/${item}`,
     component: require(`./components/${item}`).default

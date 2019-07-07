@@ -1,17 +1,18 @@
-[
-  "box",
-  "breadcrumb",
-  "button",
-  "card",
-  "column",
-  "columns",
-  "content",
-  "delete",
-  "image",
-  "notification",
-  "progress",
-  "subtitle",
-  "table",
-  "tags",
-  "title"
-]
+{
+  "items": [
+    "box",
+    "breadcrumb",
+    "button",
+    "card",
+    "columns",
+    "content",
+    "delete",
+    "image",
+    "notification",
+    "progress",
+    "subtitle",
+    "table",
+    "tag",
+    "title"
+  ]
+}

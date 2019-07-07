@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "bulma": "^0.7.5",
+    "next-capitalize": "github:afeiship/next-capitalize",
+    "next-js-core2": "github:afeiship/next-js-core2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.7"
   },

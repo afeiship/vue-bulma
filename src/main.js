@@ -3,15 +3,23 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import 'bulma';
+import './bootstrap';
 import App from './App';
 import vueBulma from './packages/index';
 import routes from './routes';
-
+import component from './packages/component.json';
 const router = new VueRouter({ routes });
 
 Vue.use(vueBulma);
 Vue.use(VueRouter);
 Vue.config.productionTip = false;
+Vue.mixin({
+  data() {
+    return {
+      components: component.items
+    };
+  }
+});
 
 /* eslint-disable no-new */
 new Vue({

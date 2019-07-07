@@ -2,47 +2,8 @@
   <div id="app">
     <aside class="page-sider">
       <ul>
-        <li>
-          <router-link to="/button">Button</router-link>
-        </li>
-        <li>
-          <router-link to="/columns">Columns</router-link>
-        </li>
-        <li>
-          <router-link to="/box">Box</router-link>
-        </li>
-        <li>
-          <router-link to="/content">Content</router-link>
-        </li>
-        <li>
-          <router-link to="/delete">Delete</router-link>
-        </li>
-        <li>
-          <router-link to="/notification">Notification</router-link>
-        </li>
-        <li>
-          <router-link to="/progress">Progress</router-link>
-        </li>
-        <li>
-          <router-link to="/table">Table</router-link>
-        </li>
-        <li>
-          <router-link to="/tag">Tag</router-link>
-        </li>
-        <li>
-          <router-link to="/title">Title</router-link>
-        </li>
-        <li>
-          <router-link to="/subtitle">subtitle</router-link>
-        </li>
-        <li>
-          <router-link to="/breadcrumb">breadcrumb</router-link>
-        </li>
-        <li>
-          <router-link to="/image">image</router-link>
-        </li>
-        <li>
-          <router-link to="/card">card</router-link>
+        <li v-for="item in components" :key="item">
+          <router-link :to="`/${item}`">{{ item }}</router-link>
         </li>
       </ul>
     </aside>

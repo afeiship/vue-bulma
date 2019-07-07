@@ -6,7 +6,7 @@ require('next-without');
 
 const dirs = globby.sync(['./src/packages/*/index.js']);
 const components = [];
-const ignores = ['tag'];
+const ignores = ['tags', 'column'];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
   if (!ignores.includes(_item)) {
@@ -17,5 +17,11 @@ dirs.forEach((item) => {
 // create new compoentn.json
 fs.writeFileSync(
   './src/packages/component.json',
-  JSON.stringify(components, null, 2)
+  JSON.stringify(
+    {
+      items: components
+    },
+    null,
+    2
+  )
 );

@@ -28,12 +28,15 @@ module.exports = {
     'no-console': 'warn',
     'space-before-function-paren': 0,
     'no-unused-vars': [
-      'error',
+      'warn',
       {
         varsIgnorePattern: '^[$_]',
         ignoreRestSiblings: false,
         argsIgnorePattern: '^[$_]'
       }
     ]
+  },
+  globals: {
+    nx: true
   }
 };
