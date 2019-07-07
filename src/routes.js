@@ -10,6 +10,7 @@ import Tag from './components/tag';
 import Title from './components/title';
 import Subtitle from './components/subtitle';
 import Breadcrumb from './components/breadcrumb';
+import Image from './components/image';
 
 export default [
   { path: '/button', component: Button },
@@ -23,5 +24,6 @@ export default [
   { path: '/tag', component: Tag },
   { path: '/title', component: Title },
   { path: '/subtitle', component: Subtitle },
-  { path: '/breadcrumb', component: Breadcrumb }
+  { path: '/breadcrumb', component: Breadcrumb },
+  { path: '/image', component: Image }
 ];
