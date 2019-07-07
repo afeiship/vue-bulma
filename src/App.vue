@@ -1,7 +1,18 @@
 <template>
   <div id="app">
-    <page-button></page-button>
-    <page-columns></page-columns>
+    <aside class="page-sider">
+      <ul>
+        <li>
+          <router-link to="/button">Button</router-link>
+        </li>
+        <li>
+          <router-link to="/columns">Columns</router-link>
+        </li>
+      </ul>
+    </aside>
+    <section class="page-container">
+      <router-view></router-view>
+    </section>
   </div>
 </template>
 
@@ -17,13 +28,33 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+html,
+body,
+#app {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  height: 100%;
+
+  .router-link-exact-active {
+    color: #007aff;
+    text-decoration: underline;
+  }
+
+  .page-sider {
+    background: #eee;
+    bottom: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+  }
+  .page-container {
+    padding: 10px;
+    flex: 1;
+  }
 }
 </style>
