@@ -17,7 +17,9 @@ const ignores = [
   'card-image',
   'card-footer-item',
   'card-header',
-  'card-header-title'
+  'card-header-title',
+  'menu-label',
+  'menu-list',
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
