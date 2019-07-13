@@ -7,7 +7,8 @@ require('next-without');
 const dirs = globby.sync(['./src/packages/*/index.js']);
 const manifest = {
   components: [],
-  navs: []
+  navs: [],
+  exports: {}
 };
 const ignores = [
   'tags',
@@ -23,7 +24,11 @@ const ignores = [
   'message-header',
   'message-body',
   'media-left',
-  'media-content'
+  'media-content',
+  'modal-background',
+  'modal-card',
+  'modal-close',
+  'modal-content'
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
@@ -31,6 +36,7 @@ dirs.forEach((item) => {
     manifest.navs.push(_item);
   }
   manifest.components.push(_item);
+  manifest.exports[_item] = `./packages/${_item}/index.js`;
 });
 
 // create new compoentn.json
@@ -38,3 +44,7 @@ fs.writeFileSync(
   './src/packages/component.json',
   JSON.stringify(manifest, null, 2)
 );
+
+fs.writeFileSync('./components.json', JSON.stringify(manifest.exports, null, 2));
+
+// root components.json

@@ -1,7 +1,11 @@
 <template>
-  <a class="delete" :class="[size ? 'is-' + size : '']">
+  <button
+    class="delete"
+    :class="[size ? 'is-' + size : '']"
+    aria-label="delete"
+  >
     <slot></slot>
-  </a>
+  </button>
 </template>
 
 <script>
