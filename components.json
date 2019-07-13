@@ -13,6 +13,7 @@
   "columns": "./packages/columns/index.js",
   "content": "./packages/content/index.js",
   "delete": "./packages/delete/index.js",
+  "icon": "./packages/icon/index.js",
   "image": "./packages/image/index.js",
   "media": "./packages/media/index.js",
   "media-content": "./packages/media-content/index.js",
