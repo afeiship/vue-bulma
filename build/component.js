@@ -20,6 +20,8 @@ const ignores = [
   'card-header-title',
   'menu-label',
   'menu-list',
+  'message-header',
+  'message-body'
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);

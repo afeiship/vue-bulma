@@ -19,14 +19,8 @@
 export default {
   name: 'vb-button',
   props: {
-    color: {
-      type: String,
-      default: ''
-    },
-    size: {
-      type: String,
-      default: ''
-    },
+    color: String,
+    size: String,
     disabled: Boolean,
     loading: Boolean
   },
