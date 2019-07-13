@@ -1,12 +1,8 @@
 <template>
   <section class="page-box">
     <vb-box>
-      <vb-icon color="success" size="small">
-        <i class="ion ion-ios-alarm" />
-      </vb-icon>
-
-      <vb-icon color="primary" size="small">
-        <i class="ion ion-ios-aperture" />
+      <vb-icon v-for="item in icons" :key="item">
+        <i class="ion" :class="[`ion-ios-${item}`]" />
       </vb-icon>
     </vb-box>
   </section>
@@ -15,9 +11,9 @@
 <script>
 export default {
   name: 'page-box',
-  data(){
+  data() {
     return {
-      icons:[
+      icons: [
         'alarm',
         'aperture',
         'archive',
@@ -25,9 +21,9 @@ export default {
         'planet',
         'play',
         'pint',
-        'pricetags',
+        'pricetags'
       ]
-    }
+    };
   }
 };
 </script>
