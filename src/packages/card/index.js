@@ -1,5 +1,5 @@
-import Box from './index.vue';
-Box.install = function(Vue) {
-  Vue.component(Box.name, Box);
+import Card from './index.vue';
+Card.install = function(Vue) {
+  Vue.component(Card.name, Card);
 };
-export default Box;
+export default Card;

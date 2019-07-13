@@ -16,7 +16,7 @@ Vue.config.productionTip = false;
 Vue.mixin({
   data() {
     return {
-      components: component.items
+      components: component.components
     };
   }
 });

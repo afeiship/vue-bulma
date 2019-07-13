@@ -5,23 +5,30 @@ const globby = require('globby');
 require('next-without');
 
 const dirs = globby.sync(['./src/packages/*/index.js']);
-const components = [];
-const ignores = ['tags', 'column'];
+const manifest = {
+  components: [],
+  navs: []
+};
+const ignores = [
+  'tags',
+  'column',
+  'card-content',
+  'card-footer',
+  'card-image',
+  'card-footer-item',
+  'card-header',
+  'card-header-title'
+];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
   if (!ignores.includes(_item)) {
-    components.push(_item);
+    manifest.navs.push(_item);
   }
+  manifest.components.push(_item);
 });
 
 // create new compoentn.json
 fs.writeFileSync(
   './src/packages/component.json',
-  JSON.stringify(
-    {
-      items: components
-    },
-    null,
-    2
-  )
+  JSON.stringify(manifest, null, 2)
 );

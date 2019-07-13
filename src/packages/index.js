@@ -1,7 +1,7 @@
 import component from '../packages/component.json';
 const components = {};
 
-component.items.forEach((item) => {
+component.components.forEach((item) => {
   components[nx.capitalize(item)] = require(`./${item}`).default;
 });
 

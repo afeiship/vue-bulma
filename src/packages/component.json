@@ -1,5 +1,29 @@
 {
-  "items": [
+  "components": [
+    "box",
+    "breadcrumb",
+    "button",
+    "card",
+    "card-content",
+    "card-footer",
+    "card-footer-item",
+    "card-header",
+    "card-header-title",
+    "card-image",
+    "column",
+    "columns",
+    "content",
+    "delete",
+    "image",
+    "notification",
+    "progress",
+    "subtitle",
+    "table",
+    "tag",
+    "tags",
+    "title"
+  ],
+  "navs": [
     "box",
     "breadcrumb",
     "button",
