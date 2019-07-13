@@ -21,7 +21,9 @@ const ignores = [
   'menu-label',
   'menu-list',
   'message-header',
-  'message-body'
+  'message-body',
+  'media-left',
+  'media-content'
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
