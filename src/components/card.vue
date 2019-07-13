@@ -34,18 +34,16 @@
           </p>
           <p>
             时钟滴答滴答，一秒一秒的走着，毫无表情，不缓不急，过去了就是过去了，或许，有很多事情，
-            我们会缅怀，会留恋，会铭刻，会珍藏，但那还是属于过去，还是被盖上了刻有&ldquo;曾经&rdquo;两字的印章，来不及细思量，来不及描绘，来不及逗留，转瞬即逝，洒下一地落英碎碎念，留下一串心语声声慢。生命只是时间中的一个停顿，一切的意义都只在它发生的那一时刻，如果可以，不要等！
-          </p>
-          <p>
-            人生没有预定的轨迹，一切都在不确定中前行，你根本就无法预知明天会是什么样，好想把日子过成诗，爱为主题，幸福为背景，思考为主线，微笑为韵脚，日月星辰，花草树木，雨霜雪露为载体，经历和感受为表达方式，想象和幻想为延伸，时光温婉，岁月静好，让生活充满美妙旋律
-            。至于生活中出现的一切不爽就让沉默来掩埋，让雨雪去消融，不论怎样，都不能让灵魂发出惨淡苍白的声音，哪怕是孤独轻影茕茕孑立
-            ，也要播一曲梵音，在柔和典雅，清澈湛寂，明净清幽的音乐中，把寂寥坐穿，把浑浊驱散，在心间开出一朵莲。
+            我们会缅怀，会留恋，会铭刻，会珍藏，但那还是属于过去，还是被盖上了刻有&ldquo;曾经&rdquo;两字的印章，来不及细思量
           </p>
         </vb-card-content>
         <vb-card-footer>
-          <vb-card-footer-item>Save</vb-card-footer-item>
-          <vb-card-footer-item>Edit</vb-card-footer-item>
-          <vb-card-footer-item>Delete</vb-card-footer-item>
+          <vb-card-footer-item>
+            <a href="#">Save</a>
+          </vb-card-footer-item>
+          <vb-card-footer-item>
+            <a href="#">Edit</a>
+          </vb-card-footer-item>
         </vb-card-footer>
       </vb-card>
     </div>

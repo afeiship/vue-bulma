@@ -1,7 +1,7 @@
 <template>
-  <a href="#" class="card-footer-item">
+  <p href="#" class="card-footer-item">
     <slot></slot>
-  </a>
+  </p>
 </template>
 
 <script>

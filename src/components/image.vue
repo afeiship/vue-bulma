@@ -7,6 +7,11 @@
       dimension="128"
       src="http://avatar.chsword.net/avatar/3"
     />
-    <vb-image ratio="4:3" src="http://avatar.chsword.net/avatar/4"></vb-image>
   </section>
 </template>
+
+<style lang="scss">
+.page-image .image {
+  margin-bottom: 20px;
+}
+</style>
