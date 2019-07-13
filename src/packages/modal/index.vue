@@ -1,7 +1,7 @@
 <template>
   <div class="modal" :class="[{ 'is-active': visible }]">
     <vb-modal-background />
-    <vb-modal-close @click="close" />
+    <vb-modal-close v-if="closeable" @click="close" />
     <vb-modal-content>
       <slot></slot>
     </vb-modal-content>
@@ -16,7 +16,8 @@ export default {
       type: Boolean,
       default: false,
       required: true
-    }
+    },
+    closeable: Boolean
   },
   methods: {
     close() {
