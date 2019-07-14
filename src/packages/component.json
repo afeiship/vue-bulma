@@ -34,6 +34,7 @@
     "progress",
     "subtitle",
     "table",
+    "tabs",
     "tag",
     "tags",
     "title"
@@ -56,6 +57,7 @@
     "progress",
     "subtitle",
     "table",
+    "tabs",
     "tag",
     "title"
   ],
@@ -94,6 +96,7 @@
     "progress": "./packages/progress/index.js",
     "subtitle": "./packages/subtitle/index.js",
     "table": "./packages/table/index.js",
+    "tabs": "./packages/tabs/index.js",
     "tag": "./packages/tag/index.js",
     "tags": "./packages/tags/index.js",
     "title": "./packages/title/index.js"
