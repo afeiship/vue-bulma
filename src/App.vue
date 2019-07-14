@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <aside class="page-sider">
-      <h2>组件列表</h2>
+      <h2>Components</h2>
       <ul>
         <li v-for="item in components" :key="item">
           <router-link :to="`/${item}`">{{ item }}</router-link>
