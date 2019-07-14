@@ -28,7 +28,11 @@ const ignores = [
   'modal-background',
   'modal-card',
   'modal-close',
-  'modal-content'
+  'modal-content',
+  'panel-block',
+  'panel-heading',
+  'panel-tabs',
+  'panel-icon',
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
