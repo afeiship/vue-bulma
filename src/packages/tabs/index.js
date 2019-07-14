@@ -1,5 +1,5 @@
-import Box from './index.vue';
-Box.install = function(Vue) {
-  Vue.component(Box.name, Box);
+import Tabs from './index.vue';
+Tabs.install = function(Vue) {
+  Vue.component(Tabs.name, Tabs);
 };
-export default Box;
+export default Tabs;
