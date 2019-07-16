@@ -10,6 +10,7 @@
 - https://github.com/chenz24/vue-blu
 - https://github.com/vue-bulma/vue-bulma
 - https://codepen.io/tatimblin/pen/oWKdjR
+- https://github.com/spatie/vue-tabs-component
 
 ## one-of for vue
 ```js
