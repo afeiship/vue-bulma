@@ -7,6 +7,9 @@
 
 ## resources
 - https://juejin.im/post/5afcd516f265da0b9e65414b
+- https://github.com/chenz24/vue-blu
+- https://github.com/vue-bulma/vue-bulma
+- https://codepen.io/tatimblin/pen/oWKdjR
 
 ## one-of for vue
 ```js
