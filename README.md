@@ -1,5 +1,5 @@
 <p align="center">
-  <a>
+  <a href="javascript:;">
     <img width="50" src="https://cn.vuejs.org/images/logo.png" >
     <img width="200" src="https://bulma.io/images/bulma-logo.png">
   </a>
