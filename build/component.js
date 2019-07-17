@@ -33,6 +33,7 @@ const ignores = [
   'panel-heading',
   'panel-tabs',
   'panel-icon',
+  'tab',
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);

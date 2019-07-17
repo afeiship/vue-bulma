@@ -1,39 +1,36 @@
 <template>
-  <div
-    class="tabs"
-    :class="[
-      {
-        'is-fullwidth': fullwidth
-      },
-      size ? `is-${size}` : '',
-      align ? `is-${align}` : '',
-      styled ? `is-${styled}` : '',
-      styled === 'toggle-rounded' ? 'is-toggle' : ''
-    ]"
-  >
-    <ul>
+  <section class="tabs-list">
+    <header
+      class="tabs tabs__header"
+      :class="[
+        {
+          'is-fullwidth': fullwidth
+        },
+        size ? `is-${size}` : '',
+        align ? `is-${align}` : '',
+        styled ? `is-${styled}` : '',
+        styled === 'toggle-rounded' ? 'is-toggle' : ''
+      ]"
+    >
       <li
-        v-for="(item, index) in items"
+        v-for="(item, index) in tabs"
         :key="index"
-        :class="[{ 'is-active': activeIndex === index }]"
-        @click="change(index)"
+        :class="{ 'is-active': index === activeIndex }"
       >
-        <a>
-          <vb-icon v-if="item.icon" size="small">
-            <i :class="item.icon" />
-          </vb-icon>
-          <span>{{ item.text || item }}</span>
-        </a>
+        <a :href="item.href" @click="change(index, item)">{{ item.title }}</a>
       </li>
-    </ul>
-  </div>
+    </header>
+
+    <div class="tabs__body">
+      <slot></slot>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
   name: 'vb-tabs',
   props: {
-    items: Array,
     size: String,
     align: String,
     styled: String,
@@ -43,8 +40,17 @@ export default {
       default: 0
     }
   },
+  data() {
+    return { tabs: [] };
+  },
+  created() {
+    this.tabs = this.$children;
+  },
   methods: {
-    change(inIndex) {
+    change(inIndex, inItem) {
+      this.tabs.forEach((item, index) => {
+        item.active = item.title === inItem.title;
+      });
       this.$emit('update:activeIndex', inIndex);
     }
   }
