@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/afeiship/vue-bulma">
-    <img width="200" src="https://bulma.io/images/bulma-logo.png">
+    <img width="200" src="http://ww1.sinaimg.cn/large/006tNc79gy1g538138h1fj30hs04gdg4.jpg">
   </a>
 </p>
 
