@@ -1,5 +1,5 @@
 <template>
-  <div class="tab" :class="{ 'is-active': active }">
+  <div class="tab" v-if="active">
     <slot></slot>
   </div>
 </template>
@@ -8,8 +8,12 @@
 export default {
   name: 'vb-tab',
   props: {
-    active: Boolean,
     title: String
+  },
+  data() {
+    return {
+      active: false
+    };
   }
 };
 </script>

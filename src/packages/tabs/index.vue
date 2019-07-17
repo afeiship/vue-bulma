@@ -12,13 +12,15 @@
         styled === 'toggle-rounded' ? 'is-toggle' : ''
       ]"
     >
-      <li
-        v-for="(item, index) in tabs"
-        :key="index"
-        :class="{ 'is-active': index === activeIndex }"
-      >
-        <a :href="item.href" @click="change(index, item)">{{ item.title }}</a>
-      </li>
+      <ul>
+        <li
+          v-for="(item, index) in tabs"
+          :key="index"
+          :class="{ 'is-active': index === activeIndex }"
+        >
+          <a :href="item.href" @click="change(index)">{{ item.title }}</a>
+        </li>
+      </ul>
     </header>
 
     <div class="tabs__body">
@@ -43,14 +45,13 @@ export default {
   data() {
     return { tabs: [] };
   },
-  created() {
+  mounted() {
     this.tabs = this.$children;
+    this.tabs[this.activeIndex].active = true;
   },
   methods: {
-    change(inIndex, inItem) {
-      this.tabs.forEach((item, index) => {
-        item.active = item.title === inItem.title;
-      });
+    change(inIndex) {
+      this.tabs.forEach((item, index) => (item.active = inIndex === index));
       this.$emit('update:activeIndex', inIndex);
     }
   }
