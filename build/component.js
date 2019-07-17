@@ -34,6 +34,8 @@ const ignores = [
   'panel-tabs',
   'panel-icon',
   'tab',
+  'dropdown-divider',
+  'dropdown-item',
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);

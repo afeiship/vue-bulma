@@ -1,6 +1,6 @@
 <template>
   <button
-    @click="_click"
+    @click="click"
     class="button"
     :disabled="disabled"
     :class="[
@@ -25,7 +25,7 @@ export default {
     loading: Boolean
   },
   methods: {
-    _click(inEvent) {
+    click(inEvent) {
       this.$emit('click', inEvent);
     }
   }
