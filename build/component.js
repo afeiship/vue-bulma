@@ -36,6 +36,12 @@ const ignores = [
   'tab',
   'dropdown-divider',
   'dropdown-item',
+  'navbar-brand',
+  'navbar-burger',
+  'navbar-dropdown',
+  'navbar-item',
+  'navbar-link',
+  'navbar-menu'
 ];
 dirs.forEach((item) => {
   const _item = item.slice(15, -9);
@@ -52,6 +58,9 @@ fs.writeFileSync(
   JSON.stringify(manifest, null, 2)
 );
 
-fs.writeFileSync('./components.json', JSON.stringify(manifest.exports, null, 2));
+fs.writeFileSync(
+  './components.json',
+  JSON.stringify(manifest.exports, null, 2)
+);
 
 // root components.json

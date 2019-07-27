@@ -1,6 +1,6 @@
 <template>
   <a
-    class="navbar-item"
+    class="navbar-link"
     :class="[
       {
         'has-dropdown': dropdown
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'vb-navbar-item',
+  name: 'vb-navbar-link',
   props: {
     dropdown: Boolean
   }

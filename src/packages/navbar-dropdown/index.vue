@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="navbar-dropdown"
-    :class="[{ 'is-active': active }]"
-  >
+  <div class="navbar-dropdown" :class="[{ 'is-active': active }]">
     <slot></slot>
   </div>
 </template>
