@@ -4,7 +4,7 @@ const globby = require('globby');
 // next packages:
 require('next-without');
 
-const dirs = globby.sync(['./src/packages/*/index.js']);
+const dirs = globby.sync(['./packages/*/index.js']);
 const manifest = {
   components: [],
   navs: [],
@@ -44,7 +44,7 @@ const ignores = [
   'navbar-menu'
 ];
 dirs.forEach((item) => {
-  const _item = item.slice(15, -9);
+  const _item = item.slice(11, -9);
   if (!ignores.includes(_item)) {
     manifest.navs.push(_item);
   }
@@ -54,7 +54,7 @@ dirs.forEach((item) => {
 
 // create new compoentn.json
 fs.writeFileSync(
-  './src/packages/component.json',
+  './packages/component.json',
   JSON.stringify(manifest, null, 2)
 );
 
