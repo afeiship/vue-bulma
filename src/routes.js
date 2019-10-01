@@ -1,4 +1,4 @@
-import component from './packages/component.json';
+import component from '../packages/component.json';
 export default component.navs.map((item) => {
   return {
     path: `/${item}`,

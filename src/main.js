@@ -2,12 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import './bootstrap';
 import App from './App';
-import vueBulma from './packages/index';
 import routes from './routes';
-import component from './packages/component.json';
+import vueBulma from '../packages/index';
+import component from '../packages/component.json';
 const router = new VueRouter({ routes });
 
 Vue.use(vueBulma);
