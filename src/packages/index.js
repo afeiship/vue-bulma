@@ -1,4 +1,4 @@
-import component from './component.json';
+import component from '../packages/component.json';
 const components = {};
 
 component.components.forEach((item) => {
