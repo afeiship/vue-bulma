@@ -6,59 +6,56 @@ body,
 }
 
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  display: flex;
+  font-family: "Microsoft YaHei", Arial, Verdana, sans-serif;
   height: 100%;
 
-  .router-link-exact-active {
-    color: #007aff;
-    text-decoration: underline;
-  }
-
   .page-sider {
-    background: #fefefe;
-    border-right: 1px solid #ccc;
-    padding: 10px;
-    width: 280px;
+    background: #162a42;
+    width: 170px;
     height: 100%;
+    font-size: 15px;
+    position: fixed;
+    padding: 80px 0 20px;
     h2 {
-      padding-left: 8px;
-      border-left: 3px solid #21d376;
-      font-size: 16px;
-      margin-bottom: 15px;
-      border-bottom: none;
-      padding-bottom: 0;
+      position: absolute;
+      top:0;
+      text-align: center;
+      background: #ffdd57;
+      padding: 14px 0;
+      img {
+        width: 80%;
+      }
     }
     ul {
+      height: 100%;
+      overflow: scroll;
       li {
-        background: #fff;
-        margin-bottom: 1px;
         a {
           padding: 0 15px;
-          color: #307acd;
+          color: #65717e;
           display: block;
-          height: 30px;
-          line-height: 30px;
-          font-size: 14px;
+          height: 42px;
+          line-height: 42px;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
           transition: all 0.1s;
-          &:hover {
-            background: lighten(#ddd, 5%);
-          }
+          &:hover,
           &.router-link-active {
-            text-decoration: none;
-            background: #21d376;
+            background: #1f344d;
             color: #fff;
+          }
+
+          i {
+            display: inline-block;
+            margin-right: 3px;
           }
         }
       }
     }
   }
   .page-container {
-    padding: 10px;
-    flex: 1;
+    margin-left: 200px;
     > [class^="page-"] {
       width: 80%;
       margin: 10px auto;
