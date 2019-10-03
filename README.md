@@ -18,6 +18,7 @@
 - https://github.com/vue-bulma/vue-bulma
 - https://codepen.io/tatimblin/pen/oWKdjR
 - https://github.com/spatie/vue-tabs-component
+- http://wiki.cn.mikecrm.com/
 
 ## one-of for vue
 ```js
