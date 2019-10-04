@@ -36,6 +36,12 @@ export default {
       const { path } = this.$route;
       return path.slice(1);
     }
+  },
+  mounted() {
+    const { path } = this.$route;
+    if (path === '/') {
+      this.$router.push(`/${this.components[0]}`);
+    }
   }
 };
 </script>
