@@ -16,8 +16,8 @@
     <section class="page-container">
       <nav class="page-navbar">
         <h3>
-          <i class="ion ion-ios-pricetags" />
-          <strong>NAVBAR</strong>
+          <img width="24" src="https://cn.vuejs.org/images/logo.png" />
+          <strong>vb-{{ current }}</strong>
         </h3>
       </nav>
       <div class="page-components">
@@ -30,7 +30,13 @@
 <script>
 export default {
   name: 'App',
-  components: {}
+  components: {},
+  computed: {
+    current() {
+      const { path } = this.$route;
+      return path.slice(1);
+    }
+  }
 };
 </script>
 

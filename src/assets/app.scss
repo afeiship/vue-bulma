@@ -80,6 +80,11 @@ body,
       background: #fff;
       border-bottom: 1px #e8e8e8 solid;
       z-index: 100;
+
+      &,
+      & img{
+        vertical-align: middle;
+      }
     }
   }
 }
