@@ -18,10 +18,15 @@ body,
     padding: 80px 0 20px;
     h2 {
       position: absolute;
-      top:0;
+      top: 0;
       text-align: center;
       background: #ffdd57;
-      padding: 14px 0;
+      height: 60px;
+      line-height: 60px;
+      &,
+      & img{
+        vertical-align: middle;
+      }
       img {
         width: 80%;
       }
@@ -55,11 +60,26 @@ body,
     }
   }
   .page-container {
-    margin-left: 200px;
+    margin-left: 170px;
+    height: 100%;
     > [class^="page-"] {
-      width: 80%;
-      margin: 10px auto;
       background: #fefefe;
+    }
+
+    .page-components{
+      background: #eee;
+      padding: 20px;
+      height: calc(100% - 60px);
+    }
+
+    .page-navbar {
+      height: 60px;
+      line-height: 60px;
+      padding: 0 20px;
+      box-sizing: border-box;
+      background: #fff;
+      border-bottom: 1px #e8e8e8 solid;
+      z-index: 100;
     }
   }
 }

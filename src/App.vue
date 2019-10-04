@@ -14,7 +14,15 @@
       </ul>
     </aside>
     <section class="page-container">
-      <router-view></router-view>
+      <nav class="page-navbar">
+        <h3>
+          <i class="ion ion-ios-pricetags" />
+          <strong>NAVBAR</strong>
+        </h3>
+      </nav>
+      <div class="page-components">
+        <router-view></router-view>
+      </div>
     </section>
   </div>
 </template>
