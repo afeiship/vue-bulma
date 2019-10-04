@@ -10,7 +10,8 @@
     "start": "npm run dev",
     "pretty": "prettier-eslint --write \"build/**/*.js\" \"src/**/*.js\" \"src/**/*.vue\"",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "docs": "node build/build.js",
+    "build": "webpack --config build/webpack.comp.conf.js"
   },
   "dependencies": {
     "bulma": "^0.7.5",
@@ -58,6 +59,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "prettier": "^1.18.2",
+    "progress-bar-webpack-plugin": "^1.12.1",
     "rimraf": "^2.6.0",
     "sass-loader": "^7.3.1",
     "semver": "^5.3.0",
