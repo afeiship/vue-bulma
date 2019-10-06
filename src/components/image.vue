@@ -1,11 +1,13 @@
 <template>
   <section class="page-image">
-    <vb-image dimension="64" src="http://avatar.chsword.net/avatar/1" />
-    <vb-image dimension="64" src="http://avatar.chsword.net/avatar/2" />
+    <vb-image
+      dimension="64"
+      src="http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg"
+    />
     <vb-image
       rounded
       dimension="128"
-      src="http://avatar.chsword.net/avatar/3"
+      src="http://himg.bdimg.com/sys/portrait/item/be10475f686d6c73db00.jpg"
     />
   </section>
 </template>

@@ -1,11 +1,6 @@
 <template>
   <section class="page-breadcrumb">
-    <h1>breadcrumb</h1>
     <vb-breadcrumb :items="items" />
-    <h1>breadcrumb - centered</h1>
-    <vb-breadcrumb :items="items" centered />
-    <h1>breadcrumb - right</h1>
-    <vb-breadcrumb :items="items" right />
   </section>
 </template>
 
