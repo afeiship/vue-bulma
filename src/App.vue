@@ -7,7 +7,7 @@
       <ul>
         <li v-for="item in components" :key="item">
           <router-link :to="`/${item}`">
-            <i class="ion ion-ios-menu"></i>
+            <i class="ion ion-ios-list"></i>
             <span>{{ item }}</span>
           </router-link>
         </li>
