@@ -10,7 +10,6 @@
 
 ## develop
 - http://localhost:8080/
-- https://afeiship.github.io/vue-bulma/
 
 ## resources
 - https://juejin.im/post/5afcd516f265da0b9e65414b
